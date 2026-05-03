@@ -1,6 +1,6 @@
 {
-  "name": "Coro Santa Ethnea",
-  "short_name": "CS_Ethnea",
+  "name": "Coro del Encuentro",
+  "short_name": "C_Encuentro",
   "description": "Plataforma de estudio y organización coral",
   "start_url": "./index.html",
   "scope": "/",
