@@ -15,10 +15,11 @@ export default function EstudioAdmin() {
   const cargar = useCallback(async () => {
     setCargando(true)
 
-    const { count: countObras } = await supabase
-      .from('obras')
-      .select('*', { count: 'exact', head: true })
-      .eq('coro_id', '9b326c28-0d13-49cc-8ee0-7bc982ee91ea')
+const { count: countObras } = await supabase
+  .from('obras')
+  .select('*', { count: 'exact', head: true })
+  .eq('coro_id', '9b326c28-0d13-49cc-8ee0-7bc982ee91ea')
+  .eq('publicada', true)
 
     setTotalObras(countObras || 0)
 
